@@ -8,7 +8,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>eBazar | Home</title>
+    <title>eYongin | Home</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="{% url 'home' %}"><img src="/media/images/img/logo.png" alt="logo"></a>
+            <a href="{% url 'home' %}"><img src="/media/images/img/language.png" alt="logo"></a>
         </div>
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
@@ -42,7 +42,7 @@
 				</div>
             </div>
             <div class="header__top__right__auth">
-                <a href="{% url 'login' %}"><i class="fa fa-user"></i> Login</a>
+                <a href="{% url 'login' %}"><i class="fa fa-user"></i> 로그인</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
@@ -94,9 +94,9 @@
                         <div class="header__top__right">
                             <div class="header__top__right__social">
                                 {% if user.is_authenticated %}
-                                <a href="{% url 'logout' %}"><i class="fa fa-user"></i> Logout</a>
+                                <a href="{% url 'logout' %}"><i class="fa fa-user"></i> 로그아웃</a>
                                 {% else %}
-                                <a href="{% url 'login' %}"><i class="fa fa-user"></i> Login</a>
+                                <a href="{% url 'login' %}"><i class="fa fa-user"></i> 로그인</a>
                                 {% endif %}
                             </div>
                             <div class="header__top__right__auth">
@@ -201,7 +201,7 @@
                     <div class="hero__item set-bg" data-setbg="/media/images/img/hero/banner.jpg">
                         <div class="hero__text">
                             <span>NEW PRODUCTS</span>
-                            <h2>Yongin_Commerce <br />집앞으로 신선 제품을 받아보세요</h2>
+                            <h2>eYongin <br />집 앞으로 신선한 제품을 받아보세요</h2>
                             <p>5만원 이상 구매시 로켓 배송 무료</p>
                             <a href="{% url 'home' %}" class="primary-btn">SHOP NOW</a>
                         </div>
@@ -606,7 +606,7 @@
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Macbook Pro</h6>
-                                        <span>$2349.00</span>
+                                        <span>2,300,000</span>
                                     </div>
                                 </a>
                             </div>
@@ -636,11 +636,11 @@
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-calendar-o"></i> 2021.05.21</li>
                                 <li><i class="fa fa-comment-o"></i> 5</li>
                             </ul>
-                            <h5><a href="#">eCommerce marketing and selling</a></h5>
-                            <p>eBazar’s ecommerce blog covers a variety of topics and is well-known for providing great marketing automation solutions. </p>
+                            <h5><a href="#">동종업계 서비스 평판 1위!</a></h5>
+                            <p> 더욱더 고객님들의 소리에 귀 기울여 더 좋은 서비스로 보답하겠습니다! </p>
                         </div>
                     </div>
                 </div>
@@ -651,11 +651,11 @@
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-calendar-o"></i> 2021.06.15</li>
                                 <li><i class="fa fa-comment-o"></i> 5</li>
                             </ul>
-                            <h5><a href="#">전자 상거래 성장 및 참여</a></h5>
-                            <p>eBazar's blog shares top-notch advice on building customer loyalty and engagement through user-generated content marketing. </p>
+                            <h5><a href="#">eYongin 10주년!</a></h5>
+                            <p>eYongIn이 서비스를 시작한지 10년이 되었습니다. 저희의 서비스를 사랑해 주시는 고객님들 덕분에 여기까지 올 수 있었습니다. 고객님들의 성원에 더욱더 보답하는 eYongin이 되겠습니다.  </p>
                         </div>
                     </div>
                 </div>
@@ -666,11 +666,11 @@
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-calendar-o"></i> 2021.03.21</li>
                                 <li><i class="fa fa-comment-o"></i> 5</li>
                             </ul>
-                            <h5><a href="#">Dropshipping tips and resources</a></h5>
-                            <p>For dropshippers, the eBazar's blog is one of the most credible and informative resources out there. </p>
+                            <h5><a href="#"> 동종업계 회원 수 1위!</a></h5>
+                            <p> 고객님들의 지대한 관심과 성원에 감사드립니다. 회원 수 1위 기념으로 오늘부터 한달 간 로켓 배송 무료!!! </p>
                         </div>
                     </div>
                 </div>
@@ -686,26 +686,26 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="{% url 'home' %}"><img src="media/images/img/logo.png" alt=""></a>
+                            <a href="{% url 'home' %}"><img src="media/images/img/language.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: 경기도 용인시 처인구청 용인대학교</li>
                             <li>Phone: +82 010 4564 2181</a></li>
-                            <li><a href="{% url 'sortedproducts' 'shoes' %}">Shoes</a></li>
+                            <li><a href="{% url 'sortedproducts' 'shoes' %}">신발</a></li>
                         </ul>
                         <ul>
-                            <li><a href="{% url 'sortedproducts' 'household' %}">Household</a></li>
-                            <li><a href="{% url 'sortedproducts' 'books' %}">Books</a></li>
-                            <li><a href="{% url 'sortedproducts' 'electronics' %}">Electronics</a></li>
-                            <li><a href="{% url 'login' %}">Login</a></li>
-                            <li><a href="{% url 'register' %}">Register</a></li>
-                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'sortedproducts' 'household' %}">가구</a></li>
+                            <li><a href="{% url 'sortedproducts' 'books' %}">도서</a></li>
+                            <li><a href="{% url 'sortedproducts' 'electronics' %}">전자 기기</a></li>
+                            <li><a href="{% url 'login' %}">로그인</a></li>
+                            <li><a href="{% url 'register' %}">회원 가입</a></li>
+                            <li><a href="{% url 'contact' %}">고객 센터</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="footer__widget">
-                        <h6>우리의 소식을 받아보세요/h6>
+                        <h6>우리의 소식을 받아보세요</h6>
                         <p>새로운 상품과 할인 소식을 들으시려면 이메일을 입력하세요.</p>
                         <form action="#">
                             <input type="text" placeholder="메일 주소를 입력하세요.">
@@ -720,8 +720,8 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-				<a href="{% url 'home' %}"> yongincommerce.com, Inc</a>
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+				<a href="{% url 'home' %}"> eYongin.com, Inc</a>
 			</div>
         </div>
     </footer>

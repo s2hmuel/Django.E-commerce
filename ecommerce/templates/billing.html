@@ -9,7 +9,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}eBazar | Payment{% endblock %}</title>
+    <title>{% block title %}eYongin | Payment{% endblock %}</title>
 
     <!-- stripe js -->
     <script src="https://js.stripe.com/v3/"></script>
@@ -80,14 +80,14 @@
             <ul style="list-style: none; display: flex;">
                 <li class="nav"><a href="{% url 'home' %}">Home</a></li>
                 <li class="nav"><a href="{% url 'allproducts' %}">Shop</a></li>
-                <li class="nav"><a href="{% url 'cart' %}">Cart</a></li>
+                <li class="nav"><a href="{% url 'cart' %}">장바구니</a></li>
             </ul>
         </nav>
     </div>
 
     <!-- breadcrumb part start-->
     <div style="text-align: center;">
-        <h2>Payment</h2>
+        <h2>결제</h2>
     </div>
     <!-- breadcrumb part end-->
 
@@ -100,7 +100,7 @@
                     <div class="login_part_form">
                         <div class="login_part_form_iner" style="margin-top: 20px; margin-bottom: 20px;">
                             <div style="text-align: center; margin-bottom: 50px;">
-                                <h2>Billing Information</h2>
+                                <h2>청구서 정보</h2>
                             </div>
                             <!-- Payment form start -->
                             <script src="https://js.stripe.com/v3/"></script>
@@ -114,10 +114,10 @@
                                     <input id="input" type="email" name="email" placeholder="Email" required>
                                 </div>
                                 <div class="input">
-                                    <input id="input" type="text" name="name" placeholder="Full Name" required>
+                                    <input id="input" type="text" name="name" placeholder="이름" required>
                                 </div>
                                 <div class="input">
-                                    <input id="input" type="text" name="address" placeholder="Address" required>
+                                    <input id="input" type="text" name="address" placeholder="주소" required>
                                 </div>
 
                                 <div class="form-row" style="margin-bottom: 20px;">
@@ -131,7 +131,7 @@
                                     <!-- Used to display form errors. -->
                                     <div id="card-errors" role="alert"></div>
                                 </div>
-                                <button id="sb">Submit Payment</button>
+                                <button id="sb">결제 요청</button>
                             </form>
                             <!-- Payment form end -->
                         </div>
