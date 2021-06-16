@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-<title>{% block title %}Create Product{% endblock %}</title>
+<title>{% block title %}상품 등록{% endblock %}</title>
 
 {% load static %}
 
@@ -23,7 +23,7 @@
 
 <!-- breadcrumb part start-->
 <div class="row justify-content-center" style="margin-bottom: 20px;">
-	<h2>Product Create</h2>
+	<h2>상품 등록</h2>
 </div>
 <!-- breadcrumb part end-->
 
@@ -35,49 +35,49 @@
 				<div class="login_part_form">
 					<div class="login_part_form_iner" style="margin-bottom: 20px; margin-top: 20px;">
 						<div class="row justify-content-center" style="margin-bottom: 20px;">
-							<h3>New product! <br>
-								Enter product details</h3>
+							<h3>새로운 상품 등록! <br>
+								제품 상세 내용을 입력하세요</h3>
 						</div>
 						<form class="row contact_form" enctype="multipart/form-data" method="post">
 							{% csrf_token %}
 							<div class="col-md-12 form-group p_star">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+								<input type="text" class="form-control" id="name" name="name" placeholder="제품명">
 							</div>
 							<div class="col-md-12 form-group p_star">
-								<input type="text" class="form-control" id="price" name="price" placeholder="Price">
+								<input type="text" class="form-control" id="price" name="price" placeholder="가격">
 							</div>
 
 							<div class="col-md-12 form-group p_star">
 								<input type="text" class="form-control" id="description" name="description"
-									placeholder="Description">
+									placeholder="설명">
 							</div>
 
 							<div class="col-md-12 form-group p_star">
 								<select class="custom-select" id="inputGroupSelect01" name="color">
-									<option selected>Select color ...</option>
-									<option value="Black">Black</option>
-									<option value="Blue">Blue</option>
-									<option value="Red">Red</option>
-									<option value="Yellow">Yellow</option>
-									<option value="Brown">Brown</option>
-									<option value="Silver">Silver</option>
-									<option value="Purple">Purple</option>
-									<option value="Grey">Grey</option>
-									<option value="White">White</option>
+									<option selected>색상 ...</option>
+									<option value="Black">블랙</option>
+									<option value="Blue">블루</option>
+									<option value="Red">레드</option>
+									<option value="Yellow">옐로우</option>
+									<option value="Brown">브라운</option>
+									<option value="Silver">실버</option>
+									<option value="Purple">퍼플</option>
+									<option value="Grey">그레이</option>
+									<option value="White">화이트</option>
 								</select>
 							</div>
 
 							<div class="col-md-12 form-group p_star">
 								<select class="custom-select" id="inputGroupSelect01" name="category">
-									<option selected>Select category ...</option>
-									<option value="Electronics">Electronics</option>
-									<option value="Shoes">Shoes</option>
-									<option value="Men Clothes">Men Clothes</option>
-									<option value="Women Clothes">Women Clothes</option>
-									<option value="HouseHold">HouseHold</option>
-									<option value="Books">Books</option>
-									<option value="Grocery">Grocery</option>
-									<option value="Beauty">Beauty</option>
+									<option selected>분류 ...</option>
+									<option value="Electronics">전자기기</option>
+									<option value="Shoes">신발</option>
+									<option value="Men Clothes">남성 의류</option>
+									<option value="Women Clothes">여성 의류</option>
+									<option value="HouseHold">가구</option>
+									<option value="Books">책</option>
+									<option value="Grocery">식료품</option>
+									<option value="Beauty">미용/화장품</option>
 								</select>
 							</div>
 
@@ -86,13 +86,13 @@
 							</div>
 
 							<div class="col-md-12 form-group p_star">
-								<input type="number" class="form-control" id="quantity" name="quantity"
-									placeholder="Quantity" required>
+								<input type="number" class="form-control" id="quantity" name="Quantity"
+									placeholder="수량" required>
 							</div>
 
 							<div class="col-md-12 form-group row justify-content-center">
 								<button type="submit" class="btn_3">
-									create
+									생성
 								</button>
 							</div>
 						</form>

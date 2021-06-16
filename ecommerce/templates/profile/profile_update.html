@@ -2,7 +2,7 @@
 {% load widget_tweaks %}
 {% block content %}
 <div class="row justify-content-center" style="margin-bottom: 20px;">
-    <h2>Update Profile</h2>
+    <h2>정보 수정</h2>
 </div>
 
 <!--================ product create Area =================-->
@@ -13,7 +13,7 @@
 				<div class="login_part_form">
 					<div class="login_part_form_iner" style="margin-top: 20px; margin-bottom: 20px;">
                         <div class="row justify-content-center" style="margin-bottom: 20px;">
-                            <h3>Enter credentials!</h3>
+                            <h3>정보를 입력하세요!</h3>
                         </div>
 						<form class="row contact_form" enctype="multipart/form-data" method="post">
 							{% csrf_token %}
@@ -36,8 +36,8 @@
 							</div>			
 
 							<div class="col-md-12 form-group row justify-content-center">
-								<button type="submit" class="btn_3">Submit</button>
-                                <a href="{% url 'change_password' %}">Change Password</a>
+								<button type="submit" class="btn_3">제출</button>
+                                <a href="{% url 'change_password' %}">비밀번호 변경</a>
 							</div>
 						</form>
 					</div>

@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
+<title>{% block title %}Contact{% endblock %}</title>
 
 {% load static %}
+
 <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 <!-- animate CSS -->
 <link rel="stylesheet" href="{% static 'css/animate.css' %}">
@@ -19,26 +21,59 @@
 
 {% block content %}
 
-<section class="login_part section_padding " style="padding-top: 20px; margin-bottom: 20px;">
+<!-- breadcrumb part start-->
+<div class="row justify-content-center" style="margin-bottom: 20px;">
+    <h2>온라인 문의</h2>
+</div>
+<!-- breadcrumb part end-->
+
+<!--================ product create Area =================-->
+<section class="login_part section_padding ">
     <div class="container">
         <div class="row justify-content-center" style="border: 2px solid green;">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-2">
                 <div class="login_part_form">
                     <div class="login_part_form_iner" style="margin-top: 20px; margin-bottom: 20px;">
-                        <div class="row justify-content-center" style="margin-top: 100px;">
-                            <img src="/media/images/payment/check.jpg" alt="check mark" height="200px;" width="200px;" class="img-responsive">
+                        <div class="row justify-content-center" style="margin-bottom: 20px;">
+                            <h3>온라인 문의</h3>
                         </div>
-                        <div class="row justify-content-center">
-                            <h3>결제 성공!</h3>
-                        </div>
-                        <div class="row justify-content-center" style="margin-bottom: 150px; margin-top: 50px;">
-                            <a href="{% url 'home' %}">홈으로 돌아가기</a>
-                        </div>
+                        <form class="row contact_form" enctype="multipart/form-data" method="post">
+                            {% csrf_token %}
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="아이디">
+                            </div>
+                            
+                            <div class="col-md-12 form-group p_star">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            
+                            <div class="col-md-12 form-group p_star">
+                                <select class="custom-select" id="inputGroupSelect01" name="subject">
+                                    <option selected>선택 ...</option>
+                                    <option value="CUstomer Service">고객 서비스</option>
+                                    <option value="Product Support">상품 A/S 문의</option>
+                                    <option value="Problems">상품에 대한 문의</option>
+                                    <option value="Need help">기타</option>
+                                </select>
+                            </div>
+                            
+                            
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text"  class="form-control" id="message" name="message" placeholder="내용" required>
+                            </div>
+
+                            <div class="col-md-12 form-group row justify-content-center">
+                                <button type="submit" class="btn_3">
+                                    메시지 전송
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!--================ product create end =================-->
 
 {% endblock %}

@@ -48,17 +48,15 @@
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li class="active"><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'productlist' %}">Shop</a></li>
+                <li><a href="{% url 'productlist' %}">쇼핑하러가기</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="#">Shop Details</a></li>
-                        <li><a href="{% url 'cart' %}">Shoping Cart</a></li>
-                        <li><a href="#">Check Out</a></li>
-                        <li><a href="#">Blog Details</a></li>
+                        <li><a href="{% url 'cart' %}">장바구니</a></li>
+                        <li><a href="#">공지사항</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="{% url 'contact' %}">고객센터</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -118,20 +116,20 @@
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="{% url 'home' %}">Home</a></li>
-                            <li><a href="{% url 'allproducts' %}">Shop</a></li>
+                            <li><a href="{% url 'allproducts' %}">쇼핑하러가기</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="{% url 'insertproduct' %}">Sell</a></li>
-                                    <li><a href="{% url 'cart' %}">Shoping Cart</a></li>
+                                    <li><a href="{% url 'insertproduct' %}">상품 판매</a></li>
+                                    <li><a href="{% url 'cart' %}">장바구니</a></li>
                                     {% if user.is_authenticated %}
                                     <li><a href="{% url 'profile_detail' user.id %}">나의 정보</a></li>
                                     {% endif %}
                                     {% if user.is_staff %}
-                                    <li><a href="{% url 'admindashboard' %}">Admin Dashboard</a></li>
+                                    <li><a href="{% url 'admindashboard' %}">회원 관리</a></li>
                                     {% endif %}
 									<li><a href="#"></a></li>
-                                    <li><a href="#">블로그</a></li>
-                                    <li><a href="{% url 'contact' %}">연락처</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="{% url 'contact' %}">고객센터</a></li>
                                 </ul>
                             </li>
                             <li><a href="{% url 'cart' %}">장바구니 <i class="fa fa-shopping-bag"></i>
@@ -185,7 +183,7 @@
                                     <span class="arrow_carrot-down"></span>
                                 </div>
                                 <input type="text" name="search" placeholder="무엇이 필요하세요?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                                <button type="submit" class="site-btn">검색</button>
                             </form>
                         </div>
                         <div class="hero__search__phone">
@@ -203,7 +201,7 @@
                             <span>NEW PRODUCTS</span>
                             <h2>eYongin <br />집 앞으로 신선한 제품을 받아보세요</h2>
                             <p>5만원 이상 구매시 로켓 배송 무료</p>
-                            <a href="{% url 'home' %}" class="primary-btn">SHOP NOW</a>
+                            <a href="{% url 'home' %}" class="primary-btn">구매</a>
                         </div>
                     </div>
                 </div>
@@ -244,7 +242,7 @@
 					</div>
 					<div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="/media/images/vegetables.jpg">
-                            <h5><a href="groceries">Groceries</a></h5>
+                            <h5><a href="groceries">식료품</a></h5>
                         </div>
                     </div>
                 </div>
@@ -588,7 +586,7 @@
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Macbook Pro</h6>
-                                        <span>₩2,200,000</span>
+                                        <span></span>
                                     </div>
                                 </a>
                                 <a href="{% url 'allproducts' %}" class="latest-product__item">
@@ -606,7 +604,7 @@
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Macbook Pro</h6>
-                                        <span>2,300,000</span>
+                                        <span>₩2,300,000</span>
                                     </div>
                                 </a>
                             </div>

@@ -22,9 +22,9 @@ class Cart(models.Model):
 class CartItem(models.Model):
     product = models.ForeignKey(Item, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
-    price = models.DecimalField(default=0.00, max_digits=10, decimal_places=2)
+    price = models.DecimalField(default=0.00, max_digits=10, decimal_places=0)
     cart = models.ForeignKey('Cart', on_delete=models.CASCADE)
-    subtotal = models.DecimalField(max_digits=100, decimal_places=2, default=0)
+    subtotal = models.DecimalField(default=0.00, max_digits=50, decimal_places=0)
 
     def get_price(self):
         return self.quantity * self.price

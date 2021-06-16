@@ -79,7 +79,7 @@
         <nav>
             <ul style="list-style: none; display: flex;">
                 <li class="nav"><a href="{% url 'home' %}">Home</a></li>
-                <li class="nav"><a href="{% url 'allproducts' %}">Shop</a></li>
+                <li class="nav"><a href="{% url 'allproducts' %}">쇼핑하러가기</a></li>
                 <li class="nav"><a href="{% url 'cart' %}">장바구니</a></li>
             </ul>
         </nav>
@@ -106,7 +106,7 @@
                             <script src="https://js.stripe.com/v3/"></script>
                             <form action="{% url 'charge' %}" method="post" id="payment-form" style="text-align: center;">
                                 {% csrf_token %}
-
+    
                                 <div style="width: 75%; height: 25px;">
                                     <input id="input" type="hidden" name="amount" value="{{ total }}" readonly>
                                 </div>
@@ -119,15 +119,15 @@
                                 <div class="input">
                                     <input id="input" type="text" name="address" placeholder="주소" required>
                                 </div>
-
+    
                                 <div class="form-row" style="margin-bottom: 20px;">
                                     <label for="card-element">
-
+                                        
                                     </label>
                                     <div id="card-element">
                                         <!-- A Stripe Element will be inserted here. -->
                                     </div>
-
+    
                                     <!-- Used to display form errors. -->
                                     <div id="card-errors" role="alert"></div>
                                 </div>

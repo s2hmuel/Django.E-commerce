@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="row justify-content-center">
-    <h2>My Profile</h2>
+    <h2>내 정보</h2>
 </div>
 
 <!--================ profile Area =================-->
@@ -14,7 +14,7 @@
                 <div class="login_part_form">
                     <div class="login_part_form_iner" style="margin-top: 20px; margin-bottom: 20px;">
                         <div class="row justify-content-center" style="margin-bottom: 20px;">
-                            <h3>My Profile</h3>
+                            <h3>내 정보</h3>
                         </div>
                         {% for user in profile_detail %}
                         <form class="row contact_form" action="{% url 'register' %}" method="post">
@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-md-12 form-group row justify-content-center">
                                 {% for user in profile_detail %}
-                                <a href="{% url 'editprofile' %}" class="btn_3">Update Profile</a>
+                                <a href="{% url 'editprofile' %}" class="btn_3">수정</a>
                                 {% endfor %}
                             </div>
                         </form>

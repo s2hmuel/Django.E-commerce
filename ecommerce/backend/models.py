@@ -31,7 +31,6 @@ class Item(models.Model):
     category = models.CharField(max_length=255, default="Something")
     image = models.ImageField(upload_to='images/')
     quantity = models.IntegerField(default=1)
-
     created_at = models.DateTimeField(default=datetime.now)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
 

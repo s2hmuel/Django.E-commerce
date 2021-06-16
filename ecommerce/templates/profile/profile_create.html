@@ -26,7 +26,7 @@
 
     <!-- breadcrumb part start-->
     <div class="row justify-content-center">
-        <h2>Register</h2>
+        <h2>등록</h2>
     </div>
     <!-- breadcrumb part end-->
 
@@ -39,7 +39,7 @@
                     <div class="login_part_form">
                         <div class="login_part_form_iner" style="margin-top: 20px; margin-bottom: 20px;">
                             <div class="row justify-content-center" style="margin-bottom: 20px;">
-                                <h3>Welcome!</h3>
+                                <h3>회원가입</h3>
                             </div>
                             <div class="row justify-content-center">
                                 {% if error %}
@@ -50,15 +50,15 @@
                                 {% csrf_token %}
 
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name">
+                                    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="성">
                                 </div>
 
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name">
+                                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="이름">
                                 </div>
                                 
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="아이디">
                                 </div>
 
                                 <div class="col-md-12 form-group p_star">
@@ -66,17 +66,15 @@
                                 </div>
 
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="password" class="form-control" minlength="8" id="password1" name="password1" placeholder="Password">
+                                    <input type="password" class="form-control" minlength="8" id="password1" name="password1" placeholder="비밀번호">
                                 </div>
 
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="password" class="form-control" minlength="8" id="password2" name="password2" placeholder="Password Confirmation">
+                                    <input type="password" class="form-control" minlength="8" id="password2" name="password2" placeholder="비밀번호 확인">
                                 </div>
 
                                 <div class="col-md-12 form-group row justify-content-center">
-                                    <button type="submit" class="btn_3">register</button>
-                                    <a href="{% url 'login' %}">Login</a>
-                                </div>
+                                    <button type="submit" class="btn_3">등록</button>
                             </form>
                         </div>
                     </div>

@@ -53,15 +53,15 @@
                         <i class="fa fa-star-half-o"></i>
                         <span>(18 reviews)</span>
                     </div>
-                    <div class="product__details__price">${{ product.price }}</div>
+                    <div class="product__details__price">₩{{ product.price }}</div>
                     <p>{{ product.description }}</p>
-                    <a href="{% url 'addtocart' product.id %}" class="primary-btn">ADD TO CARD</a>
-                    <a href="{% url 'charge' %}" class="primary-btn">BUY NOW</a>
+                    <a href="{% url 'addtocart' product.id %}" class="primary-btn">장바구니 담기</a>
+                    <a href="{% url 'charge' %}" class="primary-btn">구매</a>
                     <ul>
-                        <li><b>Availability</b> <span>In Stock</span></li>
-                        <li><b>Quantity</b> <span>{{ product.quantity }} <samp>(Ends very soon!)</samp></span></li>
-                        <li><b>Weight</b> <span>0.5 kg</span></li>
-                        <li><b>Share on</b>
+                        <li><b>상태</b> <span>재고</span></li>
+                        <li><b>수량</b> <span>{{ product.quantity }} <samp>(품절 임박!)</samp></span></li>
+                        <li><b>무게</b> <span>0.5 kg</span></li>
+                        <li><b>공유</b>
                             <div class="share">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -77,13 +77,13 @@
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
-                                aria-selected="true">Information</a>
+                                aria-selected="true">정보</a>
                         </li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="tabs-1" role="tabpanel">
                             <div class="product__details__tab__desc">
-                                <h6>Products Infomation</h6>
+                                <h6>제품 정보</h6>
                                 <p>{{ product.description }}</p>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title related__product__title">
-                    <h2>Related Product</h2>
+                    <h2>이 상품을 본 고객님들이 많이 본 상품</h2>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
                     </div>
                     <div class="product__item__text">
                         <h6><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h6>
-                        <h5>${{ product.price }}</h5>
+                        <h5>₩{{ product.price }}</h5>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="product__item__text">
                         <h6><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h6>
-                        <h5>${{ product.price }}</h5>
+                        <h5>₩{{ product.price }}</h5>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                     </div>
                     <div class="product__item__text">
                         <h6><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h6>
-                        <h5>${{ product.price }}</h5>
+                        <h5>₩{{ product.price }}</h5>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                     </div>
                     <div class="product__item__text">
                         <h6><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h6>
-                        <h5>${{ product.price }}</h5>
+                        <h5>₩{{ product.price }}</h5>
                     </div>
                 </div>
             </div>

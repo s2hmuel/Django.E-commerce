@@ -47,20 +47,18 @@
 				</div>
             </div>
             <div class="header__top__right__auth">
-                <a href="{% url 'login' %}"><i class="fa fa-user"></i> Login</a>
+                <a href="{% url 'login' %}"><i class="fa fa-user"></i>로그인</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li class="active"><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'productlist' %}">Shop</a></li>
+                <li><a href="{% url 'productlist' %}">쇼핑하러가기</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="#">Shop Details</a></li>
                         <li><a href="{% url 'cart' %}">장바구니</a></li>
-                        <li><a href="#">Check Out</a></li>
-                        <li><a href="#">Blog Details</a></li>
-                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="{% url 'contact' %}">고객센터</a></li>
                     </ul>
                 </li>
             </ul>
@@ -122,20 +120,20 @@
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="{% url 'home' %}">Home</a></li>
-                            <li><a href="{% url 'allproducts' %}">Shop</a></li>
+                            <li><a href="{% url 'allproducts' %}">쇼핑하러가기</a></li>
                             <li><a href="#">페이지</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="{% url 'insertproduct' %}">판매</a></li>
-                                    <li><a href="{% url 'cart' %}">장바 구니</a></li>
+                                    <li><a href="{% url 'insertproduct' %}">상품 판매</a></li>
+                                    <li><a href="{% url 'cart' %}">장바구니</a></li>
                                     {% if user.is_authenticated %}
                                     <li><a href="{% url 'profile_detail' user.id %}">나의 정보</a></li>
                                     {% endif %}
                                     {% if user.is_staff %}
-                                    <li><a href="{% url 'admindashboard' %}">Admin Dashboard</a></li>
+                                    <li><a href="{% url 'admindashboard' %}">회원 관리</a></li>
                                     {% endif %}
 									<li><a href="#"></a></li>
-                                    <li><a href="#">블로그</a></li>
-                                    <li><a href="{% url 'contact' %}">온라인 문의</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="{% url 'contact' %}">고객센터</a></li>
                                 </ul>
                             </li>
                             <li><a href="{% url 'cart' %}">Cart <i class="fa fa-shopping-bag"></i>

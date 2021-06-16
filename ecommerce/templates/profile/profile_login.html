@@ -37,7 +37,7 @@
                     <div class="login_part_form">
                         <div class="login_part_form_iner" style="margin-top: 20px; margin-bottom: 20px;">
                             <div class="row justify-content-center" style="margin-bottom: 20px;">
-                                <h3>Welcome Back!</h3>
+                                <h3>환영합니다!</h3>
                             </div>
                                 {% if error %}
                                     <p class="italic" style="color: red;">{{error}}</p>
@@ -54,9 +54,10 @@
                                 </div>
                                 <div class="col-md-12 form-group row justify-content-center">
                                     <button type="submit" value="submit" class="btn_3">
-                                        log in
+                                        로그인
                                     </button>
-                                    <a class="lost_pass" href="{% url 'register' %}">Don't have account?</a>
+
+                                    <a class="lost_pass" href="{% url 'register' %}">  회원가입</a>
                                 </div>
                             </form>
                         </div>
